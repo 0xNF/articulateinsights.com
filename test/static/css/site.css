@@ -1,0 +1,77 @@
+.title {
+
+}
+
+.MainContent {
+
+}
+
+.product h6 {
+    /* text-align: center; */
+}
+
+.product h6 a {
+    color: black;
+}
+
+.product-block {
+    display: flex;
+    align-items: center;
+}
+
+.product-block p {
+    margin-left: 10px;
+}
+
+.service {
+
+}
+
+.service-block {
+    display: flex;
+    align-items: center;
+}
+
+.service h6 a {
+    color: black;
+}
+
+.service-block p {
+    min-width: 250px;
+}
+
+.service-img {
+    margin-left: 10px;
+}
+
+
+#hamburger-dropdown {
+    display: none;
+    margin-left: 0px;
+    position: unset;
+}
+#hamburger-button:active #hamburger-dropdown {
+    display: inline;
+}
+
+.product-description {
+    
+}
+
+.available-platforms {
+    text-align: center;
+}
+
+/* Removes the hamburger when screen is truly tiny */
+@media screen and (max-width: 330px) {
+    .hamburgerdiv {
+        display: none;
+    }
+}
+
+/* Removes the hamburger when all options are displayed */
+@media screen and (min-width: 576px) {
+    .hamburgerdiv {
+        display: none;
+    }
+}
