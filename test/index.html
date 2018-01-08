@@ -1,11 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Articulate (TEST)</title>
-        <meta lang="en"/>
         <meta charset="utf-8">
-    </head>
-    <body>
-        <h1> Articulate (TEST BLOCK) is working.</h1>
-    </body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <link rel="shortcut icon" href="/static/img/favicon.svg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="static/css/site.css">
+        <title>Articulate Insights - Software Services</title>
+      </head>
+
+    <body style="background-color: black">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <div style="display: block">
+                    <img src="static/img/logo.png" height="75" width="75"/>
+                    Articulate Insights
+                </div>
+            </a>
+            
+            <!-- menu button -->
+            <div class="hamburgerdiv" onblur="closeOverFlow()">
+                <button style="background:transparent; border:0" id="hamburger-button" onclick="openOverFlow()">
+                    <img src="static/img/hamburger.svg" height="25"/>
+                </button>
+                <ul class="navbar-nav ml-auto" id="hamburger-dropdown">
+                    <li>
+                        Products
+                        <ul>
+                            <li>
+                                <a href="products/ptt">Process Tree and Timeline (ptt)</a>
+                            </li>
+                            <li>
+                                <a href="products/letssearch">Let's Search</a>
+                            </li>
+                            <li>
+                                <a href="products/lyricall">Lyricall</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Services
+                        <ul>
+                            <li>
+                                <a href="services/consulting">Consulting</a>
+                            </li>
+                            <li>
+                                <a href="services/custom">Custom Solutions</a>
+                            </li>
+                            <li>
+                                <a href="services/training">Training</a>
+                            </li>
+                        </ul>
+                    </li>
+                    Misc
+                    <ul>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse float-md-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownProducts">
+                            <a class="dropdown-item" href="products/ptt">Process Tree and Timeline (ptt)</a>
+                            <a class="dropdown-item" href="products/letssearch">Let's Search!</a>
+                            <a class="dropdown-item" href="products/lyricall">Lyricall</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownServices">
+                            <a class="dropdown-item" href="servics/consulting">Consulting</a>
+                            <a class="dropdown-item" href="services/custom">Custom Solutions</a>
+                            <a class="dropdown-item" href="services/training">Training</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container MainContent" style="background-color: grey; width: 1000px">
+
+            <!-- Overview -->
+            <div id="#overview">
+                <h5>Overview</h5>
+                <p>
+                    Articulate offers a range of products and services, such as security minded log-analysis applications, process automation, and custom development for your enterprise demands. 
+                    We choose the right tool for the job, whether that's linux scripts, .NET backends, or the database of your choosing. Our services are tailored to your specifications.
+                    
+                    Additionally, we offer specialized research and consulting related to software architecture and design, and information security best practices.
+                </p>
+            </div>
+
+            <!-- Products -->
+            <div id="#products">
+                <h5>Products</h5>
+                <div class="product">
+                    <h6>
+                        <u>
+                            <a href="products/ptt">PTT</a>
+                        </u>
+                    </h6>
+                    <div class="product-block container">
+                        <img class="img-responsive" height="100" src="static/img/sample_ptt.png"/>
+                        <div>
+                            <p class="product-description">
+                                See your Windows Security Event Log data organized chronologically and grouped by Process.
+                                See which events were emitted by which process and how it fits together in a tree,
+                                or view events as a timeline that can be grouped by Event Id or Date.
+                                Comes with rich filtering functionality allowing you to create complex queries.
+                            </p>
+                            <p class="available-platforms">
+                                Available on Windows 10
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="product">
+                    <h6>
+                        <u>
+                            <a href="products/letssearch">Let's Search!</a>
+                        </u>
+                    </h6>
+                    <div class="product-block container">
+                        <img class="img-responsive" height="100" src="static/img/sample_letssearch.png"/>
+                        <div>
+                            <p class="product-description">
+                                A completely offline Japanese-English dictionary with fast search, kanji-by-radical lookup, examples, and complete verb conjugations.
+                            </p>
+                            <p class="available-platforms">
+                                Available on <a target="_blank" href="https://www.microsoft.com/store/productId/9NBLGGH0C85J">Windows 10</a>
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="product">
+                    <h6>
+                        <u>
+                            <a href="products/lyricall">Lyricall</a>
+                        </u>
+                    </h6>
+                    <div class="product-block container">
+                        <img class="img-responsive" height="100" src="static/img/sample_lyricall.png"/>
+                        <div>
+                            <p class="product-description">
+                                Smart Playlists for Spotify - create playlists that will automatically populate using user-defined rules,
+                                and which draw songs from user-defined sources. Updates every night at midnight UTC.
+                            </p>
+                            <p class="available-platforms">
+                                Available in all modern browsers at <a target="_blank" href="https://lyricall.net:">https://lyricall.net</a>
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div id="#services">
+                <h5>Services</h5>
+                <div class="service">
+                    <h6>
+                        <u>
+                            <a href="services/research">Research</a>
+                        </u>
+                    </h6>
+                    <div class="service-block">
+                        <p>
+                            Want to know which of your current back-office processes can be automated or made more efficient with software? 
+                            Or perhaps you're thinking about upgrading a legacy system to a more modern software stack and need to know how much effort it would really require before you sign off on such a project.
+                            Let us do this research for you.
+                        </p>
+                        <img class="service-img float-right" height="100" src="static/img/sample_consulting.png"/>
+                    </div> 
+                </div>
+                <div class="service">
+                    <h6>
+                        <u>
+                            <a href="services/custom">Custom Solutions</a>
+                        </u>
+                    </h6>
+                    <div class="service-block">
+                        <p>
+                            testing Custom Solutions
+                        </p>
+                        <img class="service-img float-right" height="100" src="static/img/sample_custom.png"/>
+                    </div> 
+                </div>
+                <div class="service">
+                    <h6>
+                        <u>
+                            <a href="services/training">Training</a>
+                        </u>
+                    </h6>
+                    <div class="service-block">
+                        <p>                            
+                            Want to know about modern information-security best practices? We can help teach everyone from the accountants to the secretaries about modern InfoSec and what it means for their own day-to-day jobs.
+                            Or if you have programmers, we can go to a much deeper technical level and teach them about secure computing methods, such as input sanitization and data validation, proper access control, adversarial archtectural models and process isolation.
+                            Or maybe they just want a lesson in C# and PostgreSQL. 
+                            We're happy to offer seminars and worshops in any of our specialities.
+                        </p>
+                        <img class="service-img float-right" height="100" src="static/img/sample_training.png"/>
+                    </div> 
+                </div>
+            </div>
+
+
+            <!-- Misc -->
+            <div id="#misc">
+                <div id="#about">
+                    <h5>About</h5>
+                    <p>
+                        C# stuff
+                    </p>
+                </div>
+                <div id="#contact">
+                    <h5>Contact</h5>
+                    <span>
+                        <img src="static/img/email.svg" height="20"/>
+                        <a href="mailto:info@articulateinsights.com">info@articulateinsights.com</a>
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- end-loaded scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>    </body>
+        <script src="static/js/site.js"></script>
 </html>
