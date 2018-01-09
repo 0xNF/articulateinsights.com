@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <link rel="shortcut icon" href="/static/img/logo_notext.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="/static/css/site.css">
+        <title>Custom Development and Automation - Articulate Insights</title>
+      </head>
+
+    <body style="background-color: black">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <div style="display: block">
+                    <img style="vertical-align: top" src="/static/img/logo_notext.png" height="30"/>
+                    Articulate Insights
+                </div>
+            </a>
+            
+            <!-- menu button -->
+            <div class="hamburgerdiv" onblur="closeOverFlow()">
+                <button style="background:transparent; border:0" id="hamburger-button" onclick="openOverFlow()">
+                    <img src="/static/img/hamburger.svg" height="25"/>
+                </button>
+                <ul class="navbar-nav ml-auto" id="hamburger-dropdown">
+                    <li>
+                        Products
+                        <ul>
+                            <li>
+                                <a href="/products/ptt">Process Tree and Timeline (ptt)</a>
+                            </li>
+                            <li>
+                                <a href="/products/letssearch">Let's Search</a>
+                            </li>
+                            <li>
+                                <a href="/products/lyricall">Lyricall</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Services
+                        <ul>
+                            <li>
+                                <a href="/services/research">Research</a>
+                            </li>
+                            <li>
+                                <a href="/services/custom">Custom Solutions</a>
+                            </li>
+                            <li>
+                                <a href="/services/training">Training</a>
+                            </li>
+                        </ul>
+                    </li>
+                    Misc
+                    <ul>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse float-md-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownProducts">
+                            <a class="dropdown-item" href="/products/ptt">Process Tree and Timeline (ptt)</a>
+                            <a class="dropdown-item" href="/products/letssearch">Let's Search!</a>
+                            <a class="dropdown-item" href="/products/lyricall">Lyricall</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownServices">
+                            <a class="dropdown-item" href="/services/research">Research</a>
+                            <a class="dropdown-item" href="/services/custom">Custom Solutions</a>
+                            <a class="dropdown-item" href="/services/training">Training</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container MainContent" style="background-color: grey; height: 100%;">
+            <div style="margin: 0 auto; width: 100px">
+                <img src="/static/img/custom/code.png" height="100" width="200"/>
+            </div>
+            <h5>Automation</h5>
+            <p>
+                We offer custom software development and automation services for your business needs.<br/>
+                If you do any of the following things manually, contact us and we'll figure out how to automate your processes.
+                <ul>
+                    <li>Adding to or updating a spreadsheet</li>
+                    <li>Updating internal database records</li>
+                    <li>Filing forms</li>
+                    <li>Repeat orders to an external service</li>
+                    <li>Send out regular emails</li>
+                </ul>
+            </p>
+            <h5>Custom Development</h5>
+            <p>
+                If you have a product in mind but one doesn't currently exist on the market, or one does but it is too complicated or expensive, we can build your own personal product, built for your specific needs.
+            </p>
+            <p>
+                Additionally, if any of our products look interesting to you but do not presently meet your needs, we offer extension services to our product suites in order better align them with customer use-cases.
+                If you'd like to request an extension or modification to one of our products, please contact us.
+            </p>
+
+            <!-- Misc -->
+            <div id="#misc" style="text-align: center; margin-top: 50px;">
+                <h5>Purchasing</h5>
+                <p>
+                    For service inquiries please contact <a href="mailto:purchasing@articulateinsights.com">purchasing@articulateinsights.com</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- end-loaded scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>    </body>
+        <script src="/static/js/site.js"></script>
+</html>
