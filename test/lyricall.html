@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <link rel="shortcut icon" href="static/img/favicon.svg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="static/css/site.css">
+        <title>Articulate Insights - Software Services</title>
+      </head>
+
+    <body style="background-color: black">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <div style="display: block">
+                    <img style="vertical-align: top" src="static/img/logo_notext.png" height="30"/>
+                    Articulate Insights
+                </div>
+            </a>
+            
+            <!-- menu button -->
+            <div class="hamburgerdiv" onblur="closeOverFlow()">
+                <button style="background:transparent; border:0" id="hamburger-button" onclick="openOverFlow()">
+                    <img src="static/img/hamburger.svg" height="25"/>
+                </button>
+                <ul class="navbar-nav ml-auto" id="hamburger-dropdown">
+                    <li>
+                        Products
+                        <ul>
+                            <li>
+                                <a href="products/ptt">Process Tree and Timeline (ptt)</a>
+                            </li>
+                            <li>
+                                <a href="products/letssearch">Let's Search</a>
+                            </li>
+                            <li>
+                                <a href="products/lyricall">Lyricall</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Services
+                        <ul>
+                            <li>
+                                <a href="services/research">Research</a>
+                            </li>
+                            <li>
+                                <a href="services/custom">Custom Solutions</a>
+                            </li>
+                            <li>
+                                <a href="services/training">Training</a>
+                            </li>
+                        </ul>
+                    </li>
+                    Misc
+                    <ul>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse float-md-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownProducts">
+                            <a class="dropdown-item" href="products/ptt">Process Tree and Timeline (ptt)</a>
+                            <a class="dropdown-item" href="products/letssearch">Let's Search!</a>
+                            <a class="dropdown-item" href="products/lyricall">Lyricall</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownServices">
+                            <a class="dropdown-item" href="servics/research">Research</a>
+                            <a class="dropdown-item" href="services/custom">Custom Solutions</a>
+                            <a class="dropdown-item" href="services/training">Training</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container MainContent" style="background-color: grey; width: 1000px">
+
+            <!-- Overview -->
+            <div id="#overview">
+                <h5 style="text-align: center;">Lyricall - Smart Playlists for Spotify</h5>
+                <p>
+                    Create Smart Playlists that automatically add songs that match your specified rules, each night at midnight.<br/>
+                    Perfect for creating that playlist you always wanted to create, but never had the will to curate yourself.<br/>
+                    Want have all your instrumental songs in one place? How about high energy songs? Or just songs by a collection of musicians?<br/>
+                    Lyricall can do all of this for you.
+                </p>
+            </div>
+
+            <div>
+                <div class="screenshot">
+                    <h4>Create a playlist that adds only intrumental songs from your favorite artist</h4>
+                    <a target="_blank" href="https://lyricall.net/static/img/smart1.pngg">
+                        <img src="https://lyricall.net/static/img/smart1.png" height="500">
+                    </a>
+                </div>
+
+                <div class="screenshot">
+                    <h4>Or just throw a bunch of random stuff in there and see what you get</h4>
+                    <a target="_blank" href="https://lyricall.net/static/img/smart2.png">
+                        <img src="https://lyricall.net/static/img/smart2.png" height="500">
+                    </a>
+                </div>
+
+                <p>
+                    <h4>Lyricall can listen on a variety of attributes, such as the simple:</h4>
+                    <ul title="Basic Attributes">
+                        <li>Track Name</li>
+                        <li>Available Markets</li>
+                        <li>Disc Number</li>
+                        <li>Track Number</li>
+                        <li>Track Length</li>
+                        <li>Explicitness</li>
+                        <li>Popularity</li>
+                        <li>Album Name</li>
+                        <li>Album Label</li>
+                        <li>Album Release Date</li>
+                        <li>Artist Name</li>
+                    </ul>
+                    <h4>And the advanced:</h4>
+                    <ul>
+                        <li>Acousticness</li>
+                        <li>Danceability</li>
+                        <li>Energy</li>
+                        <li>Instrumentalness</li>
+                        <li>Key</li>
+                        <li>Liveness</li>
+                        <li>Loudness</li>
+                        <li>Speechiness</li>
+                        <li>Tempo</li>
+                        <li>Time Signature</li>
+                        <li>Valence</li>
+                    </ul>
+                </p>
+
+
+
+            <!-- Misc -->
+            <div id="#misc" style="text-align: center; margin-top: 50px;">
+                <h5>Purchasing</h5>
+                <p>
+                    Check it out at <a target="_blank" href="https://lyricall.net">https://lyricall.net</a>
+                </p>
+            </div>
+
+
+        </div>
+
+        <!-- end-loaded scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>    </body>
+        <script src="static/js/site.js"></script>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <link rel="shortcut icon" href="static/img/favicon.svg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="static/css/site.css">
+        <title>Articulate Insights - Software Services</title>
+      </head>
+
+    <body style="background-color: black">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <div style="display: block">
+                    <img style="vertical-align: top" src="static/img/logo_notext.png" height="30"/>
+                    Articulate Insights
+                </div>
+            </a>
+            
+            <!-- menu button -->
+            <div class="hamburgerdiv" onblur="closeOverFlow()">
+                <button style="background:transparent; border:0" id="hamburger-button" onclick="openOverFlow()">
+                    <img src="static/img/hamburger.svg" height="25"/>
+                </button>
+                <ul class="navbar-nav ml-auto" id="hamburger-dropdown">
+                    <li>
+                        Products
+                        <ul>
+                            <li>
+                                <a href="products/ptt">Process Tree and Timeline (ptt)</a>
+                            </li>
+                            <li>
+                                <a href="products/letssearch">Let's Search</a>
+                            </li>
+                            <li>
+                                <a href="products/lyricall">Lyricall</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Services
+                        <ul>
+                            <li>
+                                <a href="services/research">Research</a>
+                            </li>
+                            <li>
+                                <a href="services/custom">Custom Solutions</a>
+                            </li>
+                            <li>
+                                <a href="services/training">Training</a>
+                            </li>
+                        </ul>
+                    </li>
+                    Misc
+                    <ul>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse float-md-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownProducts">
+                            <a class="dropdown-item" href="products/ptt">Process Tree and Timeline (ptt)</a>
+                            <a class="dropdown-item" href="products/letssearch">Let's Search!</a>
+                            <a class="dropdown-item" href="products/lyricall">Lyricall</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownServices">
+                            <a class="dropdown-item" href="servics/research">Research</a>
+                            <a class="dropdown-item" href="services/custom">Custom Solutions</a>
+                            <a class="dropdown-item" href="services/training">Training</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container MainContent" style="background-color: grey; width: 1000px">
+
+            <!-- Overview -->
+            <div id="#overview">
+                <h5 style="text-align: center;">Process Tree and Timeline (ptt)</h5>
+                <p>
+                    Explore your Windows Security Event Logs in style with Process Tree and Timeline.<br/>
+                    PTT arranges events in chronological order and creates a tree-view of processes and the events they emitted,<br/>
+                    allowing for easy tracing of process-related forensic analysis.
+                </p>
+                <p>
+                    Additionally, the Timeline view generates a histogram of the events, allowing you to easily see where and when activity on the 
+                    computer was concentrated.<br/>
+                </p>
+
+                <p>
+                    Compatible with the following event log formats:
+                    <ul>
+                        <li>Windows Event Log > Export > csv</li>
+                        <li>Windows Event Log > Export > txt</li>
+                        <li>Sysinternal's `psloglist -s`</li>
+
+                    </ul>
+                </p>
+            </div>
+
+            <div>
+                <div class="screenshot">
+                    <h4>View Event Spawning and emitted event information</h4>
+                    <a target="_blank" href="static/img/ptt/ptt_events.png">
+                        <img src="static/img/ptt/ptt_events.png" height="500">
+                    </a>
+                </div>
+
+                <div class="screenshot">
+                    <h4>View a chronological histogram of event activity</h4>
+                    <a target="_blank" href="static/img/ptt/ptt_timeline_sum.png">
+                        <img src="static/img/ptt/ptt_timeline_sum.png" height="500">
+                    </a>
+                </div>
+
+                <div class="screenshot">
+                    <h4>View an event-id histogram showing relative event counts</h4>
+                    <a target="_blank" href="static/img/ptt/ptt_timeline_eids.png">
+                        <img src="static/img/ptt/ptt_timeline_eids.png" height="500">
+                    </a>
+                </div>
+
+                <div class="screenshot">
+                    <h4>Drill down arbitrarily deep - here we see the Event Ids emitted at 5:00pm, 8/17/17</h4>
+                    <a target="_blank" href="static/img/ptt/ptt_deepfilter.png">
+                        <img src="static/img/ptt/ptt_deepfilter.png" height="500">
+                    </a>
+                </div>
+
+                <div class="screenshot">
+                    <h4>Filter on special cases, such as:</h4>
+                    <ul>
+                        <li>Phantom Events</li>
+                        <li>Shell Processes like Bash or Power Shell</li>
+                        <li>Specific Event Ids</li>
+                    </ul>
+                    <a target="_blank" href="static/img/ptt/ptt_special_filters.png">
+                        <img src="static/img/ptt/ptt_special_filters.png" height="500">
+                    </a>
+                </div>
+
+                <div class="screenshot">
+                    <h4>Filter on custom text searches - also note that matching text is highlighted in the Raw View.</h4>
+                    <a target="_blank" href="static/img/ptt/ptt_find_and_raw_view.png">
+                        <img src="static/img/ptt/ptt_find_and_raw_view.png" height="500">
+                    </a>
+                </div>
+
+
+
+            <!-- Misc -->
+            <div id="#misc" style="text-align: center; margin-top: 50px;">
+                <h5>Purchasing</h5>
+                <p>
+                    Find it on the <a target="_blank" href="">Microsoft Store</a><br/>
+                    For side-loading solutions that bypass the Microsoft Store, please contact <a href="mailto:purchasing@articulateinsights.com">purchasing@articulateinsights.com</a>
+                </p>
+            </div>
+
+
+        </div>
+
+        <!-- end-loaded scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>    </body>
+        <script src="static/js/site.js"></script>
+</html>

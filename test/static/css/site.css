@@ -1,3 +1,10 @@
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: 30px;
+}
+.navbar {min-height:30px !important;}
+
+
 .title {
 
 }
@@ -32,6 +39,10 @@
     align-items: center;
 }
 
+.service h6 {
+    
+}
+
 .service h6 a {
     color: black;
 }
@@ -62,6 +73,12 @@
     text-align: center;
 }
 
+.screenshot {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /* Removes the hamburger when screen is truly tiny */
 @media screen and (max-width: 330px) {
     .hamburgerdiv {
@@ -75,3 +92,4 @@
         display: none;
     }
 }
+
