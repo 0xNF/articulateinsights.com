@@ -58,7 +58,8 @@ app.use(function(req, res) {
 });
 
 // Launch
-const port = 8000;
+const dev_port = 8000;
+let port = process.env.PORT || dev_port;
 app.listen(port, function () {
   console.log('Articulate Insights Web Sever listening on ' + port)
 })

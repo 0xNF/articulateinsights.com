@@ -1,0 +1,35 @@
+server {
+    server_name articulateinsights.com;
+    root /home/svr/websites/articulateinsights.com/test/;
+    index index.html;
+    listen 80;
+    listen [::]80;
+
+    location / {
+
+    } 
+
+    location /products {
+    }
+
+    location /products/ptt {
+    }
+    location /products/lyricall {
+
+    }
+    location /products/letssearch {
+
+    }
+
+    location /services {
+    }
+    location /services/training {
+
+    }
+    location /services/custom {
+
+    }
+    location /services/research{
+        
+    }
+}
