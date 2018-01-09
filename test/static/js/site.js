@@ -7,7 +7,6 @@ function openOverFlow() {
     } else {
         closeOverFlow();
     }
-
 }
 
 function closeOverFlow() {
@@ -16,4 +15,4 @@ function closeOverFlow() {
     menuOpened = false;
 }
 
-$(".hamburgerdiv").focusout(closeOverFlow);
+// $(".hamburgerdiv").focusout(closeOverFlow);

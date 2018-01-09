@@ -1,0 +1,26 @@
+{
+  "name": "articulateinsights.com",
+  "version": "1.0.0",
+  "description": "Repository for articulateinsights.com",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xNF/articulateinsights.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xNF/articulateinsights.com/issues"
+  },
+  "homepage": "https://github.com/0xNF/articulateinsights.com#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
