@@ -2,8 +2,8 @@ server {
     server_name articulateinsights.com;
     root /home/svr/websites/articulateinsights.com/test/;
     index index.html;
-    listen 80;
-    listen [::]80;
+    listen 443 ssl http2;
+    listen [::]443 ssl http2;
 
     location / {
 
@@ -39,42 +39,22 @@ server {
 
     error_page 500 501 502 503 504 /50x;
     location /50x {
-        
+
     }
 }
 
 server {
-    listen 443;
-    listen [::]443;
+    listen 80;
+    listen [::]80;
     server_name articulateinsights.com;
-    root /home/svr/websites/articulateinsights.com/test/;
-    index index.html;
-
+    # ACME Challenge Rule
+    location /.well-known {
+        alias /home/svr/websites/articulateinsights.com/test/.well-known;
+        allow all;
+        default_type "text/plain";
+        autoindex    on;
+    }
     location / {
-
-    } 
-
-    location /products {
-    }
-
-    location /products/ptt {
-    }
-
-    location /products/lyricall {
-    }
-
-    location /products/letssearch {
-    }
-
-    location /services {
-    }
-    location /services/training {
-
-    }
-    location /services/custom {
-
-    }
-    location /services/research{
-        
+        return 301 https://articulateinsights.com$request_uri;
     }
 }
