@@ -30,6 +30,51 @@ server {
 
     }
     location /services/research{
+
+    }
+    error_page 404 /404;
+    location /404 {
+
+    }
+
+    error_page 500 501 502 503 504 /50x;
+    location /50x {
+        
+    }
+}
+
+server {
+    listen 443;
+    listen [::]443;
+    server_name articulateinsights.com;
+    root /home/svr/websites/articulateinsights.com/test/;
+    index index.html;
+
+    location / {
+
+    } 
+
+    location /products {
+    }
+
+    location /products/ptt {
+    }
+
+    location /products/lyricall {
+    }
+
+    location /products/letssearch {
+    }
+
+    location /services {
+    }
+    location /services/training {
+
+    }
+    location /services/custom {
+
+    }
+    location /services/research{
         
     }
 }
