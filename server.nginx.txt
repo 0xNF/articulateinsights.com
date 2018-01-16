@@ -1,9 +1,33 @@
+#server {
+#    server_name articulateinsights.com;
+#    listen 80;
+#    listen [::]80;
+#
+#    # ACME Challenge Rule, all other requests go to https redirect
+#    location /.well-known/ {
+#        alias /var/www/letscrypt/.well-known;
+#        allow all;
+#        default_type "text/plain";
+#        autoindex    on;
+#    }
+#
+#    location / {
+#        return 301 https://articulateinsights.com$request_uri;
+#    }
+#}
+
 server {
     server_name articulateinsights.com;
     root /home/svr/websites/articulateinsights.com/test/;
     index index.html;
-    listen 443 ssl http2;
-    listen [::]443 ssl http2;
+
+    #listen 443 ssl http2;
+    #listen [::]443 ssl http2;
+
+    listen [::]80;
+
+    #ssl_certificate "blah";
+    #ssl_certificate_key "blah";
 
     location / {
 
@@ -43,18 +67,3 @@ server {
     }
 }
 
-server {
-    listen 80;
-    listen [::]80;
-    server_name articulateinsights.com;
-    # ACME Challenge Rule
-    location /.well-known {
-        alias /home/svr/websites/articulateinsights.com/test/.well-known;
-        allow all;
-        default_type "text/plain";
-        autoindex    on;
-    }
-    location / {
-        return 301 https://articulateinsights.com$request_uri;
-    }
-}
