@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/0xNF/articulateinsights.com#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.17.3"
   }
 }
